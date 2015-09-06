@@ -13,6 +13,8 @@ font-size: 30px;
 line-height: 32px;
 color: #000000;
 text-transform: uppercase;
+padding: 25px 0;
+background-color: brown;
 }
 
 .filter p {
@@ -24,3 +26,150 @@ color: #000000;
 text-transform: uppercase;
 }
 
+.layout-positioner::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.main-header {
+	background-color: yellow;
+	padding: 5px 0;
+	margin-bottom: 35px;
+}
+
+.container {
+	background-color: green;
+	min-height: 20px;
+	padding: 5px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.heading {
+	margin-bottom: 60px;
+}
+
+.main-navigation {
+	width: 700px;
+	min-height: 20px;
+	background-color: pink;
+	float: left;
+}
+
+.user-block {
+	width: 240px;
+	min-height: 50px;
+	background-color: red;
+	float: right;
+}
+
+.form-div {
+	display: inline-block;
+	background-color: orange;
+}
+
+.form-1 {
+	display: inline-block;
+}
+
+.form-2 {
+	display: inline-block;
+}
+
+
+.items-block {
+	display: inline-block;
+	background-color: blue;
+	margin-bottom: 40px;
+}
+
+.item {
+	display: inline-block;
+	margin-right: 20px;
+	background-color: purple;
+}
+
+.item:nth-of-type(3n) {
+	margin-right: 0px;
+}
+
+.product-type {
+	font-style: ptsans narrow;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.item-label {
+	font-style: ptsans narrow;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.label {
+	font-style: ptsans narrow;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.pagination {
+	background-color: lightblue;
+	margin-bottom: 50px;
+}
+
+.main-footer {
+	background-color: lightgreen;
+	padding: 20px 0;
+}
+
+.footer-contacts {
+	min-height: 80px;
+	width: 220px;
+	float: left;
+	margin-right: 35px;
+}
+
+.footer-social {
+	min-height: 80px;
+	width: 140px;
+	float: left;
+}
+
+.footer-copyright {
+	min-height: 80px;
+	width: 220px;
+	float: right;
+}
+
+.item-image {
+	display: inline-block;
+	background-color: orange;
+	width: 485px;
+}
+
+.item-desciption {
+	display: inline-block;
+	background-color: blue;
+	vertical-align: top;
+}
+
+.item-desciption-wrapper {
+	display: inline-block;
+}
+
+li {
+    list-style-type: none; 
+}
+
+ul {
+    margin-left: 0; 
+    padding-left: 0; 
+ }
