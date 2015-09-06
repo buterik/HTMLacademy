@@ -6,4 +6,4 @@
 
 ## sedona
 * http://buterik.github.io/HTMLacademy/sedona/sedona-hotels.html
-* http://buterik.github.io/HTMLacademy/sedona/sedona-hotels.html
+* http://buterik.github.io/HTMLacademy/sedona/sedona-main.html
