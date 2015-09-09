@@ -1,132 +1,127 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Седона</title>
-	</head>
+  <head>
+	<meta charset="utf-8">
+	<title>Седона</title>
+	<link href="css/style.css" rel="stylesheet">
+  </head>
 	<body>
-		<header class="main-header">
-			<div class="container clearfix">
-			<nav class="main-navigation">
-				<ul>
-					 <li>
-					<a href='#'>Информация</a>
-					</li>
-					<li>
-					<a href='#'>Фото и видео</a>
-					</li>
-					<li>
-					<img src="img/logo.png" class="logo" alt="логотип">
-					</li>
-					<li>
-					<a href='#'>Карта штата</a>
-					</li>
-					<li>
-					<a href='#'>Гостиницы</a>
-					</li>
-				</ul>
-				</nav>
-			</div>
-		</header>
+		<!-- <div class="container clearfix"> -->
+		  <nav class="main-navigation">
+			<ul>
+			  <li>
+			    <a href='#'>Информация</a>
+			  </li><li>
+				<a href='#'>Фото и видео</a>
+			  </li><li class="logo">
+				<img src="img/logo.png" alt="логотип">
+			  </li><li>
+				<a href='#'>Карта штата</a>
+			  </li><li>
+				<a href='#'>Гостиницы</a>
+			  </li>
+			</ul>
+		  </nav>
+		<!-- </div> -->
 
-		<main>
-			<div class="container clearfix">
-			<div class="image-intro"><!--верхняя картинка и текст -->
-				<img src="img/bg.jpg" alt="">
-					<div>welcome </div>
-					<div>to the gorgeous</div>
-					<div>sedona</div>
-					<div>“Because the Grand Canyon Sucks!„</div>
-			</div>
-				<div class="phrase-1">седона - небольшой городок в аризоне, заслуживающий большего!</div>
-				<div class="phrase-2">рассмотрим 5 причин, по которым седона круче, чем гранд киньон!</div>
-				<section class="advantages"><!--причины -->
-					<div class="reason1">
-						<span>настоящий городок</span>
-						<div class="reason-number">№ 1</div>
-						<p>седона не атракцион для туристов, там течет своя жизнь</p>
-						<img src="img/reason1.jpg" width="" height="" alt="">
-					</div>
 
-					<div class="additional-reasons">
-						<div>
-							<img src="img/house.png" width="" height="" alt="">
-							<span>жилье</span>
-							<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-						</div>
-						<div>
-							<img src="img/food.png" width="" height="" alt="">
-							<span>еда</span>
-							<p>всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
-						</div>
-						<div>
-							<img src="img/souvenir.png" width="" height="" alt="">
-							<span>сувениры</span>
-							<p>не только китайского, но и местного производства!</p>
-						</div>
-					</div>
+		<!-- <div class="container clearfix"> -->
+		  <div class="image-intro"><!--верхняя картинка и текст -->
+			<img src="img/text.png" alt="">
+			<img class="down" src="img/down.png" alt="">
+		  </div>
 
-					<div class="reason2">
-						<span>там есть мост дьявола</span>
-						<div class="reason-number">№ 2</div>
-						<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
-						<img src="img/reason2.jpg" width="" height="" alt="">
-					</div>
+		  <div class="intro-phrases">
+		    <div class="phrase-1">седона - небольшой городок в аризоне, заслуживающий большего!</div>
+		    <div class="phrase-2">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</div>
+		  </div>
 
-					<div class="reason3-5">
-						<div>
-							<span>небольшая площадь</span>
-							<div class="reason-number">№ 3</div>
-							<p>все достопримечательности находятся очень близко</p>
-						</div>
-						<div>
-							<span>красивая дорога</span>
-							<div class="reason-number">№ 4</div>
-							<p>ехать в седону из лас-вегаса совсем не скучно</p>
-						</div>
-						<div>
-							<span>мало туристов</span>
-							<div class="reason-number">№ 5</div>
-							<p>большинство едет в гранд каньон и толпится там</p>
-						</div>
-					</div>
-				</section>
+			<section class="advantages"><!--причины -->
+			  <div class="reason-parent">
+			    <div class="reason1-2">
+			    <span>настоящий городок</span>
+				<div class="reason-number">№ 1</div>
+				<p>седона не атракцион для туристов, там течет своя жизнь</p>
+				</div><div class="reason1-img"></div>
+			  </div>
 
-				<span class="phrase-3">заинтересовались?</span>
-				<span class="phrase-4">укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</span>
-
-				<form action="#" method="post"> <!--форма -->
-					<fieldset>
-						<span>поиск гостиницы в седоне</span>
-							<label>
-							дата заезда <input type="date" name="date-in" value="2014-04-24">
-							</label>
-							<label>
-							дата выезда <input type="date" name="date-out" value="2014-04-07">
-							</label>
-							<label>
-							взрослые: <input type="number" name="number-adult" value="2" min="0">
-							</label>
-							<label>
-							дети: <input type="number" name="number-kids" value="0" min="0">
-							</label>
-						<input type="submit" value="найти">
-					</fieldset>
-				</form>
-				<div>
-					<iframe style="width:200px;height:200px" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRn6TpHch2xNUPJp040lciMfoAAH9cYkA&amp;center=34.8697400,-111.7609900&amp;zoom=9&amp;maptype=roadmap&amp;language=en"></iframe>
+			  <div class="additional-reasons">
+			    <div class="additional-reasons-card">
+				  <img src="img/house.png" width="" height="" alt="">
+				  <div class="reason-h">жилье</div>
+				  <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div><div class="additional-reasons-card">
+				  <img src="img/food.png" width="" height="" alt="">
+				  <div class="reason-h">еда</div>
+				  <p>всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+			    </div><div class="additional-reasons-card">
+				  <img src="img/souvenir.png" width="" height="" alt="">
+				  <div class="reason-h">сувениры</div>
+				  <p>не только китайского, но и местного производства!</p>
 				</div>
-			</div>
-		</main>
+			  </div>
 
-		<footer>
-			<span>#visitsedona</span>
-			<section class="footer-social">
-          			<a href="#" class="social-btn social-btn-tw"></a>
-          			<a href="#" class="social-btn social-btn-fb"></a>
-          			<a href="#" class="social-btn social-btn-yt"></a>
-        	</section>
-        	<img src="#" alt="">
-		</footer>
+			  <div class="reason1-2">
+				<span>там есть мост дьявола</span>
+				<div class="reason-number">№ 2</div>
+				<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+				<img src="img/reason2.jpg" width="" height="" alt="">
+			  </div>
+
+			  <div class="reason3-5">
+				<div>
+				  <span>небольшая площадь</span>
+				  <div class="reason-number">№ 3</div>
+				  <p>все достопримечательности находятся очень близко</p>
+				</div>
+				<div>
+				  <span>красивая дорога</span>
+				  <div class="reason-number">№ 4</div>
+				  <p>ехать в седону из лас-вегаса совсем не скучно</p>
+				</div>
+				<div>
+				  <span>мало туристов</span>
+				  <div class="reason-number">№ 5</div>
+				  <p>большинство едет в гранд каньон и толпится там</p>
+				</div>
+			  </div>
+		    </section>
+
+			<span class="phrase-3">заинтересовались?</span>
+			<span class="phrase-4">укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</span>
+
+			<form action="#" method="post"> <!--форма -->
+			  <fieldset>
+				<span>поиск гостиницы в седоне</span>
+				  <label>
+				  дата заезда <input type="date" name="date-in" value="2014-04-24">
+				  </label>
+				  <label>
+				  дата выезда <input type="date" name="date-out" value="2014-04-07">
+				  </label>
+				  <label>
+				  взрослые: <input type="number" name="number-adult" value="2" min="0">
+				  </label>
+				  <label>
+				  дети: <input type="number" name="number-kids" value="0" min="0">
+				  </label>
+				<input type="submit" value="найти">
+			  </fieldset>
+		    </form>
+			<div>
+			  <iframe style="width:200px;height:200px" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRn6TpHch2xNUPJp040lciMfoAAH9cYkA&amp;center=34.8697400,-111.7609900&amp;zoom=9&amp;maptype=roadmap&amp;language=en"></iframe>
+			</div>
+		<!-- </div> -->
+	
+
+	  <footer>
+		<span>#visitsedona</span>
+		  <section class="footer-social">
+          	<a href="#" class="social-btn social-btn-tw"></a>
+          	<a href="#" class="social-btn social-btn-fb"></a>
+          	<a href="#" class="social-btn social-btn-yt"></a>
+          </section>
+        <img src="#" alt="">
+	  </footer>
 	</body>
 </html>
