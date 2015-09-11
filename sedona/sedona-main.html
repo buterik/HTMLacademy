@@ -3,10 +3,12 @@
   <head>
 	<meta charset="utf-8">
 	<title>Седона</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet">
+	<link href="symbols-sedona/css/symbols-sedona.css" rel="stylesheet">
   </head>
 	<body>
-		<!-- <div class="container clearfix"> -->
+		<div class="container">
 		  <nav class="main-navigation">
 			<ul>
 			  <li>
@@ -39,7 +41,7 @@
 			<section class="advantages"><!--причины -->
 			  <div class="reason-parent">
 			    <div class="reason1-2">
-			    <span>настоящий городок</span>
+			    <div class="h-ka">настоящий городок</div>
 				<div class="reason-number">№ 1</div>
 				<p>седона не атракцион для туристов, там течет своя жизнь</p>
 				</div><div class="reason1-img"></div>
@@ -47,81 +49,97 @@
 
 			  <div class="additional-reasons">
 			    <div class="additional-reasons-card">
-				  <img src="img/house.png" width="" height="" alt="">
-				  <div class="reason-h">жилье</div>
+			    	<div class="icon house"></div>
+				  <!-- <img src="img/house.png" width="" height="" alt=""> -->
+				  <div class="h-ka">жилье</div>
 				  <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div><div class="additional-reasons-card">
-				  <img src="img/food.png" width="" height="" alt="">
-				  <div class="reason-h">еда</div>
+				<div class="icon food"></div>
+				  <!-- <img src="img/food.png" width="" height="" alt=""> -->
+				  <div class="h-ka">еда</div>
 				  <p>всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
 			    </div><div class="additional-reasons-card">
-				  <img src="img/souvenir.png" width="" height="" alt="">
-				  <div class="reason-h">сувениры</div>
+			    <div class="icon souvenir"></div>
+				  <!-- <img src="img/souvenir.png" width="" height="" alt=""> -->
+				  <div class="h-ka">сувениры</div>
 				  <p>не только китайского, но и местного производства!</p>
 				</div>
 			  </div>
 
-			  <div class="reason1-2">
-				<span>там есть мост дьявола</span>
+			  <div class="reason-parent">
+			  	<div class="reason2-img"></div><div class="reason1-2">
+				<div class="h-ka">там есть мост дьявола</div>
 				<div class="reason-number">№ 2</div>
 				<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
-				<img src="img/reason2.jpg" width="" height="" alt="">
+				</div>
 			  </div>
 
 			  <div class="reason3-5">
-				<div>
-				  <span>небольшая площадь</span>
+				<div class="reason3-5-card">
+				  <div class="h-ka">небольшая площадь</div>
 				  <div class="reason-number">№ 3</div>
 				  <p>все достопримечательности находятся очень близко</p>
-				</div>
-				<div>
-				  <span>красивая дорога</span>
+				</div><div class="reason3-5-card">
+				  <div class="h-ka">красивая дорога</div>
 				  <div class="reason-number">№ 4</div>
 				  <p>ехать в седону из лас-вегаса совсем не скучно</p>
-				</div>
-				<div>
-				  <span>мало туристов</span>
+				</div><div class="reason3-5-card">
+				  <div class="h-ka">мало туристов</div>
 				  <div class="reason-number">№ 5</div>
 				  <p>большинство едет в гранд каньон и толпится там</p>
 				</div>
 			  </div>
 		    </section>
 
-			<span class="phrase-3">заинтересовались?</span>
-			<span class="phrase-4">укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</span>
-
-			<form action="#" method="post"> <!--форма -->
-			  <fieldset>
-				<span>поиск гостиницы в седоне</span>
-				  <label>
-				  дата заезда <input type="date" name="date-in" value="2014-04-24">
-				  </label>
-				  <label>
-				  дата выезда <input type="date" name="date-out" value="2014-04-07">
-				  </label>
-				  <label>
-				  взрослые: <input type="number" name="number-adult" value="2" min="0">
-				  </label>
-				  <label>
-				  дети: <input type="number" name="number-kids" value="0" min="0">
-				  </label>
-				<input type="submit" value="найти">
-			  </fieldset>
-		    </form>
-			<div>
-			  <iframe style="width:200px;height:200px" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRn6TpHch2xNUPJp040lciMfoAAH9cYkA&amp;center=34.8697400,-111.7609900&amp;zoom=9&amp;maptype=roadmap&amp;language=en"></iframe>
+		    <div class="close-phrases">
+			<div class="phrase-3">заинтересовались?</div>
+			<div class="phrase-4">укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</div>
 			</div>
+
+
+			<div class="form-wrap">
+			<div class="legend">поиск гостиницы в седоне</div>
+			<form class="search" action="#" method="post"> <!--форма -->
+
+				  <div class="date-in-out">
+				  <label for="date-in">дата заезда:</label>
+				  <input type="date" name="date-in"  id="date-in" value="2014-04-24">
+				  </div>
+				  <div class="date-in-out">
+				  <label for="date-out">дата выезда:</label> 
+				  <input type="date" name="date-out" id="date-out" value="2014-04-07">
+				  </div>
+				  <div class="counters">
+				  <label for="number-adult">взрослые:</label>
+				  <input type="number" name="number-adult" id="number-adult" value="2" min="0">
+				  </div>
+				  <div class="counters">
+				  <label for="number-kids">дети:</label> 
+				  <input type="number" name="number-kids" id="number-kids" value="0" min="0">
+				  </div>
+				  <div>
+				<button class="search-button">найти</button>
+				</div>
+
+		    </form>
+		    </div>
+
+		    <div class="map"></div>
+			<!-- <div>
+			  <iframe style="width:200px;height:200px" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCRn6TpHch2xNUPJp040lciMfoAAH9cYkA&amp;center=34.8697400,-111.7609900&amp;zoom=9&amp;maptype=roadmap&amp;language=en"></iframe>
+			</div> -->
 		<!-- </div> -->
 	
 
 	  <footer>
-		<span>#visitsedona</span>
-		  <section class="footer-social">
-          	<a href="#" class="social-btn social-btn-tw"></a>
-          	<a href="#" class="social-btn social-btn-fb"></a>
-          	<a href="#" class="social-btn social-btn-yt"></a>
-          </section>
-        <img src="#" alt="">
+		<div class="footer-items">#visitsedona</div>
+		  <div class="footer-items">
+          	<a href="#" class="social-btn"><i class="icon-twitter"></i></a>
+          	<a href="#" class="social-btn"><i class="icon-facebook"></i></a>
+          	<a href="#" class="social-btn"><i class="icon-youtube"></i></a>
+          </div>
+        <div class="footer-items"><img src="img/htmlacademy.png" alt=""></div>
 	  </footer>
+	  </div>
 	</body>
 </html>
