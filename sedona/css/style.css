@@ -323,3 +323,14 @@ margin-bottom: 30px;
 	content: '— ';
 }
 
+/*страница отелей*/
+
+.hotel-form {
+	background-image: url('../img/blur.jpg');
+	width: 100%;
+	height: 215px;
+}
+
+.hotel-form-element {
+	display: inline-block;
+}
