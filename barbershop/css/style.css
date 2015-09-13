@@ -64,10 +64,6 @@ text-transform: uppercase;
 	float: right;
 }
 
-.form-div {
-	display: inline-block;
-	background-color: orange;
-}
 
 .form-1 {
 	display: inline-block;
@@ -166,10 +162,25 @@ text-transform: uppercase;
 }
 
 li {
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 ul {
-    margin-left: 0; 
-    padding-left: 0; 
+    margin-left: 0;
+    padding-left: 0;
  }
+
+
+.form-div {
+	display: inline-block;
+	vertical-align: top;
+	background-color: orange;
+	width: 24%;
+}
+
+.items-wrapper
+{
+	width: 76%;
+	vertical-align: top;
+	display: inline-block;
+}
