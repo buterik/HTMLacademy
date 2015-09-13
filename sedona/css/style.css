@@ -3,6 +3,9 @@
 	padding: 0;
 }
 
+/* форматирование CSS не однообразно
+ надо поправить отступы
+ */
 body {
 font-family: 'PT Sans', Arial, sans-serif;
 font-size: 14px;
