@@ -47,21 +47,53 @@ a img {
 /*START NAVIGATION*/
 
 .navigation {
-  font-size: 0;
+  position: relative;
+  padding: 17px 6%;
 }
 
 .navigation li {
-  display: inline-block;
-  width: 20%;
-  text-align: center;
+  width: 23%;
   vertical-align: middle;
-  font-size: 14px;
+}
+
+.navigation a:hover {
+	color: #81b3d2;
+}
+
+.navigation a:active {
+	color: black;
+	opacity: 0.3;
+}
+
+.navigation a.active {
+	color: #766357;
+}
+
+.navigation a.active:hover {
+	color: #604e43;
+}
+
+.navigation a.active:active {
+	color: #766357;
+	opacity: 0.3;
 }
 
 .navigation-logo {
-  height: 54px;
   z-index: 1;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation-left {
+	float: left;
+	text-align: left;
+}
+
+.navigation-right {
+	float: right;
+	text-align: right;
 }
 
 
@@ -76,6 +108,7 @@ a img {
 .intro {
   background-image: url('../img/bg-1.jpg');
   background-size: cover;
+  background-color: #493e35;
   height: 510px;
   width: 100%;
   text-align: center;
@@ -172,23 +205,22 @@ a img {
   display: inline-block;
   width: 67%;
   height: 100%;
+  vertical-align: top;
   background-size: cover;
 }
 
 .advantage-img-first {
   background-image: url('../img/reason1.jpg');
+  background-color: rgb(159, 127, 111);
 }
 
 .advantage-img-second {
   background-image: url('../img/reason2.jpg');
+  background-color: rgb(159, 127, 111);
 }
 
 
 /*START ADVANTEGES WITH ICONS WITHOUT NUMBERS*/
-
-.additional-advantages {
-  vertical-align: top;
-}
 
 .additional-advantage {
   display: inline-block;
@@ -332,6 +364,7 @@ a img {
   background-color: white;
   padding: 55px;
   box-sizing: border-box;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15)
 }
 
 .booking-form input {
@@ -342,11 +375,21 @@ a img {
   margin: 0px;
   box-sizing: border-box;
   float: left;
+  outline: none;
   /*чтобы избавиться от пробела между инпутом и лейблом*/
 }
 
+.booking-form input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+  background-color: white;
+  box-shadow: inset 0 0 0 2px #ebebeb;
+}
+
+
 .booking-form label {
-  display: inline-block;
   width: 110px;
   /*чтобы все инпуты выровнялись по левому краю друг с другом*/
   padding: 9px 0;
@@ -367,7 +410,6 @@ a img {
 /*START NUMBER COUNTERS*/
 
 .booking-form-counters {
-  display: inline-block;
   margin-bottom: 54px;
 }
 
@@ -396,10 +438,22 @@ a img {
   width: 36px;
   border: none;
   background-color: #f2f2f2;
+  color: #a9a9a9;
   margin: 0px;
   height: 38px;
   box-sizing: border-box;
   float: left;
+  outline: none;
+}
+
+.booking-form-plus:hover,
+.booking-form-minus:hover {
+  color: black;
+}
+
+.booking-form-plus:active,
+.booking-form-minus:active {
+  color: #81b3d2;
 }
 
 .booking-form-plus {
@@ -443,6 +497,7 @@ a img {
   background-image: url('../img/blur.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #493e35;
   width: 100%;
   color: white;
   padding: 30px 6% 15px;
@@ -491,6 +546,7 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 
+
 input[type="checkbox"] {
   display: none;
 }
@@ -503,7 +559,17 @@ input[type="checkbox"] + label::before {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.8; /*дизайнерская религия не позволяет делать цветом*/
 }
+
+input[type="checkbox"] + label:hover::before {
+	opacity: 1;
+}
+
+input[type="checkbox"]:disabled + label {
+	opacity: 0.3;
+}
+
 
 input[type="checkbox"]:checked + label::before {
   content: '\2611';
@@ -661,9 +727,24 @@ input[type="checkbox"]:checked + label::before {
   line-height: 20px;
 }
 
-.hotels-sort .active {
+.hotels-sort-arrow-container a {
+	border-bottom: 1px solid transparent;
+}
+
+.hotels-sort a.active,
+.hotels-sort a.active:hover,
+.hotels-sort a.active:active {
   color: #81b3d2;
   border-bottom: 1px solid transparent;
+}
+
+.hotels-sort a:hover {
+	color: #81b3d2;
+}
+
+.hotels-sort a:active {
+	color: black;
+	border-bottom: 1px solid transparent;
 }
 
 .hotels-sort-arrow-container {
@@ -707,17 +788,23 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 8px;
 }
 
-.hotel table {
-  border-collapse: collapse;
-  padding: 0px;
+.hotel-name a:hover {
+	color: #81b3d2;
 }
 
-.hotel td {
-  padding-right: 5px;
+.hotel-name a:active {
+	color: black;
+	opacity: 0.3;
 }
 
-.hotel-actions td {
-  padding-top: 12px;
+.hotel-info p {
+	margin-bottom: 12px;
+}
+
+.hotel-info-left,
+.hotel-info-right {
+	display: inline-block;
+	margin-right: 5px;
 }
 
 .hotel-btn {
@@ -729,12 +816,30 @@ input[type="checkbox"]:checked + label::before {
   padding: 5px 15px;
 }
 
-.hotel-more-info {
-  background-color: #81b3d2;
+.btn-blue {
+	background-color: #81b3d2;
 }
 
-.hotel-book {
+.btn-blue:hover {
+	background-color: #669ec0;
+}
+
+.btn-blue:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-brown {
   background-color: #766357;
+}
+
+.btn-brown:hover {
+	background-color: #604e43;
+}
+
+.btn-brown:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-rate {
@@ -776,6 +881,20 @@ footer {
   font-weight: bold;
 }
 
+.footer-logo {
+  background-image: url("../img/htmlacademy.png");
+  width: 195px;
+  height: 39px;
+}
+
+.footer-logo:hover {
+  background-image: url("../img/htmlacademy-hover.png");
+}
+
+.footer-logo:active {
+  background-image: url("../img/htmlacademy-active.png");
+}
+  
 .footer-social-btn {
   background-color: #81b3d2;
   width: 45px;

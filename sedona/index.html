@@ -11,28 +11,29 @@
 
 <body>
   <div class="wrapper">
-    <nav class="navigation">
+    <nav class="navigation clearfix">
       <ul>
-        <li>
+        <li class="navigation-left">
           <a href='#'>Информация</a>
         </li>
-        <li>
+        <li class="navigation-left">
           <a href='#'>Фото и видео</a>
         </li>
-        <li class="navigation-logo">
-          <a href="index.html"><img src="img/logo.png" alt="логотип"></a>
-        </li>
-        <li>
-          <a href='#'>Карта штата</a>
-        </li>
-        <li>
+        <li class="navigation-right">
           <a href='hotels.html'>Гостиницы</a>
         </li>
+        <li class="navigation-right">
+          <a href='#'>Карта штата</a>
+        </li>
       </ul>
+      <div class="navigation-logo">
+        <a href="index.html"><img src="img/logo.png" alt="логотип" width="138" height="70"></a>
+      </div>
     </nav>
+
     <div class="intro">
       <!--верхняя картинка и текст -->
-      <img src="img/text.png" alt="">
+      <img src="img/text.png" alt="Welcome to the gorgeous Sedona 'Because Grand Canyon Sucks'" width="458" height="352">
     </div>
     <div class="info">
       <div class="info-heading">седона - небольшой городок в аризоне, заслуживающий большего!</div>
@@ -96,8 +97,8 @@
       <div class="call-to-action">укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</div>
     </div>
     <div class="booking-form-wrapper">
-      <div class="booking-form-show-btn">поиск гостиницы в седоне</div>
-      <div class="booking-form-container hidden-form">
+      <div class="booking-form-show-btn btn-brown">поиск гостиницы в седоне</div>
+      <div class="booking-form-container">
         <form class="booking-form" action="#" method="post">
           <!--форма -->
           <div class="booking-form-dates clearfix">
@@ -121,12 +122,14 @@
             <button class="booking-form-plus plus-kids"><i class="icon-plus"></i></button>
           </div>
           <div>
-            <button type="submit" class="booking-form-submit">найти</button>
+            <button type="submit" class="booking-form-submit btn-blue">найти</button>
           </div>
         </form>
       </div>
     </div>
-    <div class="map"></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.17731020665!2d-111.79513845000001!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1442949098654" width="100%" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <footer>
       <div class="footer-items">#visitsedona</div>
       <div class="footer-items">
@@ -134,12 +137,14 @@
         <a href="#" class="footer-social-btn"><i class="icon-facebook"></i></a>
         <a href="#" class="footer-social-btn"><i class="icon-youtube"></i></a>
       </div>
-      <div class="footer-items"><img src="img/htmlacademy.png" alt=""></div>
+      <div class="footer-items">
+          <div class="footer-logo"></div>
+      </div>
     </footer>
   </div>
-  <script src="JS/sedona-form.js"></script>
-  <script src="JS/sedona-counters.js"></script>
-  <!-- <div style="position: absolute; width: 1280px; left: 50%; top: 0; margin-left: -640px; z-index: 999; opacity: .3;"><img src="макеты/sedona/sedona-index-1200.jpg"></div> -->
+  <script src="js/sedona-form.js"></script>
+  <script src="js/sedona-counters.js"></script>
+  <!-- <div style="position: absolute; width: 1280px; left: 50%; top: 0; margin-left: -640px; z-index: 999; opacity: .3;"><img src="img/sedona-index-1200.jpg"></div> -->
 </body>
 
 </html>
