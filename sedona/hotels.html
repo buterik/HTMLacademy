@@ -11,24 +11,24 @@
 
 <body>
   <div class="wrapper">
-    <nav class="navigation">
+    <nav class="navigation clearfix">
       <ul>
-        <li>
+        <li class="navigation-left">
           <a href='#'>Информация</a>
         </li>
-        <li>
+        <li class="navigation-left">
           <a href='#'>Фото и видео</a>
         </li>
-        <li class="navigation-logo">
-          <a href="index.html"><img src="img/logo.png" alt=""></a>
-        </li>
-        <li>
-          <a href='#'>Карта штата</a>
-        </li>
-        <li>
+        <li class="navigation-right">
           <a href='hotels.html'>Гостиницы</a>
         </li>
+        <li class="navigation-right">
+          <a href='#'>Карта штата</a>
+        </li>
       </ul>
+      <div class="navigation-logo">
+        <a href="index.html"><img src="img/logo.png" alt="логотип" width="138" height="70"></a>
+      </div>
     </nav>
     <form action="#" method="post">
       <!--форма -->
@@ -92,24 +92,24 @@
       <a href="#" class="hotels-sort-rate">по рейтингу</a>
       <div class="hotels-sort-arrow-container">
         <a href="#" class="hotels-sort-up"><i class="icon-up-dir"></i></a>
-        <a href="#" class="hotels-sort-down"><i class="icon-down-dir active"></i></a>
+        <a href="#" class="hotels-sort-down active"><i class="icon-down-dir active"></i></a>
       </div>
     </div>
     <div class="hotels">
       <div class="hotel clearfix">
-        <img src="img/amara.jpg" class="hotel-photo" alt="amara resort &amp; spa photo">
+        <img src="img/amara.jpg" class="hotel-photo" alt="amara resort &amp; spa photo" width="135" height="90">
         <div class="hotel-description">
-          <div class="headline hotel-name">amara resort &amp; spa</div>
-          <table>
-            <tr>
-              <td>гостиница</td>
-              <td>от 3500 р.</td>
-            </tr>
-            <tr class="hotel-actions">
-              <td><a class="hotel-btn hotel-more-info">подробнее</a></td>
-              <td><a class="hotel-btn hotel-book">забронировать</a></td>
-            </tr>
-          </table>
+          <div class="headline hotel-name"><a href="#">amara resort &amp; spa</a></div>
+          <div class="hotel-info">
+              <div class="hotel-info-left">
+                  <p>гостиница</p>
+                  <a class="hotel-btn hotel-more-info btn-blue">подробнее</a>
+              </div>
+              <div class="hotel-info-right">
+                  <p>от 3500 р.</p>
+                  <a class="hotel-btn hotel-book btn-brown">забронировать</a>
+              </div>
+          </div>
         </div>
         <div class="hotel-rate">
           <div class="hotel-stars">
@@ -122,19 +122,19 @@
         </div>
       </div>
       <div class="hotel clearfix">
-        <img src="img/desert.jpg" class="hotel-photo" alt="desert quail inn photo">
+        <img src="img/desert.jpg" class="hotel-photo" alt="desert quail inn photo" width="135" height="90">
         <div class="hotel-description">
-          <div class="headline hotel-name">desert quail inn</div>
-          <table>
-            <tr>
-              <td>мотель</td>
-              <td>от 2000 р.</td>
-            </tr>
-            <tr class="hotel-actions">
-              <td><a class="hotel-btn hotel-more-info">подробнее</a></td>
-              <td><a class="hotel-btn hotel-book">забронировать</a></td>
-            </tr>
-          </table>
+          <div class="headline hotel-name"><a href="#">desert quail inn</a></div>
+          <div class="hotel-info">
+              <div class="hotel-info-left">
+                  <p>мотель</p>
+                  <a class="hotel-btn hotel-more-info btn-blue">подробнее</a>
+              </div>
+              <div class="hotel-info-right">
+                  <p>от 2000 р.</p>
+                  <a class="hotel-btn hotel-book btn-brown">забронировать</a>
+              </div>
+          </div>
         </div>
         <div class="hotel-rate">
           <div class="hotel-stars">
@@ -145,19 +145,19 @@
         </div>
       </div>
       <div class="hotel clearfix">
-        <img src="img/villas.jpg" class="hotel-photo" alt="villas at poco diablo photo">
+        <img src="img/villas.jpg" class="hotel-photo" alt="villas at poco diablo photo" width="135" height="90">
         <div class="hotel-description">
-          <div class="headline hotel-name">villas at poco diablo</div>
-          <table>
-            <tr>
-              <td>апартаменты</td>
-              <td>от 4000 р.</td>
-            </tr>
-            <tr class="hotel-actions">
-              <td><a class="hotel-btn hotel-more-info">подробнее</a></td>
-              <td><a class="hotel-btn hotel-book">забронировать</a></td>
-            </tr>
-          </table>
+          <div class="headline hotel-name"><a href="#">villas at poco diablo</a></div>
+          <div class="hotel-info">
+              <div class="hotel-info-left">
+                  <p>апартаменты</p>
+                  <a class="hotel-btn hotel-more-info btn-blue">подробнее</a>
+              </div>
+              <div class="hotel-info-right">
+                  <p>от 4000 р.</p>
+                  <a class="hotel-btn hotel-book btn-brown">забронировать</a>
+              </div>
+          </div>
         </div>
         <div class="hotel-rate">
           <div class="hotel-stars">
@@ -171,14 +171,16 @@
       <footer>
         <div class="footer-items">#visitsedona</div>
         <div class="footer-items">
-          <a href="#" class="footer-social-btn"><i class="icon-twitter"></i></a>
-          <a href="#" class="footer-social-btn"><i class="icon-facebook"></i></a>
-          <a href="#" class="footer-social-btn"><i class="icon-youtube"></i></a>
+          <a href="#" class="footer-social-btn btn-blue"><i class="icon-twitter"></i></a>
+          <a href="#" class="footer-social-btn btn-blue"><i class="icon-facebook"></i></a>
+          <a href="#" class="footer-social-btn btn-blue"><i class="icon-youtube"></i></a>
         </div>
-        <div class="footer-items"><img src="img/htmlacademy.png" alt=""></div>
+        <div class="footer-items">
+          <div class="footer-logo"></div>
+        </div>
       </footer>
     </div>
-    <!-- <div style="position: absolute; width: 1280px; left: 50%; top: 0; margin-left: -640px; z-index: 999; opacity: .3;"><img src="макеты/sedona/sedona-hotels-1200.jpg"> -->
+    <!-- <div style="position: absolute; width: 1280px; left: 50%; top: 0; margin-left: -640px; z-index: 999; opacity: .3;"><img src="img/sedona-hotels-1200.jpg"> -->
   </div>
 </body>
 
