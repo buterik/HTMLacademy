@@ -136,7 +136,7 @@ a img {
 /*START INFO - 2 FIRST PHRASES*/
 
 .info {
-  margin: 60px auto;
+  margin: 60px auto 50px;
   max-width: 500px;
   text-align: center;
 }
@@ -255,7 +255,7 @@ a img {
 
 .advantages-grey {
   background-color: #eeeeee;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .advantage-grey {
@@ -285,7 +285,7 @@ a img {
   font-size: 30px;
   line-height: 26px;
   color: #000000;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .call-to-action {
@@ -478,7 +478,7 @@ a img {
 .map {
   background-image: url('../img/map.jpg');
   width: 100%;
-  height: 470px;
+  height: 480px;
 }
 
 
@@ -882,6 +882,7 @@ footer {
 }
 
 .footer-logo {
+	margin: 0 auto;
   background-image: url("../img/htmlacademy.png");
   width: 195px;
   height: 39px;
