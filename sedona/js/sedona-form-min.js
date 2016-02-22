@@ -1,0 +1,1 @@
+var legend=document.querySelector(".booking-form-show-btn"),form=document.querySelector(".booking-form-container");legend.addEventListener("click",function(e){e.preventDefault(),form.classList.add("shown-form")}),window.addEventListener("load",function(){form.classList.add("hidden-form")});

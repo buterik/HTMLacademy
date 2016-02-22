@@ -274,7 +274,7 @@ a img {
 /*START CLOSING PHRASES - CALL TO ACTION*/
 
 .marketing-attack {
-  max-width: 500px;
+  /*max-width: 540px;*/
   text-align: center;
   margin: 0 auto;
   margin-bottom: 48px;
@@ -399,11 +399,20 @@ a img {
 
 .booking-form-dates {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .booking-form-dates input {
   width: 350px;
   /*чтобы инпуты выровнялись по правому краю друг с другом*/
+}
+
+.icon-calendar {
+  position: absolute;
+  top: 7px;
+  right: 6px;
+  font-size: 21px;
+  color: #a9a9a9;
 }
 
 
@@ -447,12 +456,14 @@ a img {
 }
 
 .booking-form-plus:hover,
-.booking-form-minus:hover {
+.booking-form-minus:hover,
+.icon-calendar:hover {
   color: black;
 }
 
 .booking-form-plus:active,
-.booking-form-minus:active {
+.booking-form-minus:active,
+.icon-calendar:active {
   color: #81b3d2;
 }
 
@@ -479,6 +490,12 @@ a img {
   background-image: url('../img/map.jpg');
   width: 100%;
   height: 480px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 480px;
+  border: 0px;
 }
 
 
@@ -725,6 +742,11 @@ input[type="checkbox"]:checked + label::before {
 .hotels-sort-down {
   font-size: 23px;
   line-height: 20px;
+}
+
+.hotels-sort .hotels-sort-up:hover,
+.hotels-sort .hotels-sort-down:hover {
+  color: black;
 }
 
 .hotels-sort-arrow-container a {
